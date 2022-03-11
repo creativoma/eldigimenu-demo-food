@@ -39,3 +39,7 @@ div.client {
 button#btn {
   align-self: center;
 }
+
+div.client > p {
+  text-align: center;
+}
