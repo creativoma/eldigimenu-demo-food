@@ -1,0 +1,26 @@
+main {
+  margin: 0 auto;
+}
+
+main .main-categories {
+  min-width: 266.66px;
+  width: 266.66px;
+}
+
+main .main-categories > img {
+  width: 90%;
+}
+
+div.modal {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+main.home {
+  padding: 0px 25px;
+  margin: 0 auto;
+}
+
+main.home > .slider::-webkit-scrollbar {
+  height: 10px;
+}

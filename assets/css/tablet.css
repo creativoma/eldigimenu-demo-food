@@ -1,0 +1,41 @@
+main {
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+main .main-categories {
+  min-width: calc(50% - 12.5px);
+  width: calc(50% - 12.5px);
+}
+
+main .main-categories > img {
+  width: 80%;
+  align-self: center;
+}
+
+main.home > .slider > div.slider_card {
+  min-width: calc(100% / 4);
+}
+
+main.home > .container-card > div.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: calc((100% / 2) - 10px);
+  padding: 20px;
+  background: var(--just-white);
+  border-radius: 25px;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  background: white;
+}
+
+div.client {
+  align-items: center;
+}
+
+button#btn {
+  align-self: center;
+}
