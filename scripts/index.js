@@ -4,11 +4,12 @@ import { componenteScroll } from "./componentes/scroll.js";
 import { componenteInicio } from "./componentes/inicio.js";
 import { componenteSlider } from "./componentes/slider.js";
 
-import { componenteComida } from "./componentes/comida.js";
-import { componenteCombo } from "./componentes/combo.js";
-import { componenteBebida } from "./componentes/bebida.js";
-import { componenteDesayuno } from "./componentes/desayuno.js";
-import { componentePostre } from "./componentes/postre.js";
+import { componenteMenus } from "./componentes/menus.js";
+import { componenteSandwiches } from "./componentes/sandwiches.js";
+import { componenteBebidas } from "./componentes/bebidas.js";
+import { componenteDesayunos } from "./componentes/desayunos.js";
+import { componenteMeriendas } from "./componentes/meriendas.js";
+import { componentePostres } from "./componentes/postres.js";
 
 let mainPrincipal = document.querySelector('main').id;
 console.log('Main del momento:', mainPrincipal);
@@ -20,32 +21,38 @@ if (mainPrincipal === 'inicio'){
     componenteScroll();
 }
 
-if (mainPrincipal === 'combo'){
-    componenteCombo();
+if (mainPrincipal === 'menus'){
+    componenteMenus();
     componenteInfo();
     componenteScroll();
 }
 
-if (mainPrincipal === 'comida'){
-    componenteComida();
+if (mainPrincipal === 'sandwiches'){
+    componenteSandwiches();
     componenteInfo();
     componenteScroll();
 }
 
-if (mainPrincipal === 'bebida'){
-    componenteBebida();
+if (mainPrincipal === 'bebidas'){
+    componenteBebidas();
     componenteInfo();
     componenteScroll();
 }
 
-if (mainPrincipal === 'desayuno'){
-    componenteDesayuno();
+if (mainPrincipal === 'desayunos'){
+    componenteDesayunos();
     componenteInfo();
     componenteScroll();
 }
 
-if (mainPrincipal === 'postre'){
-    componentePostre();
+if (mainPrincipal === 'meriendas'){
+    componenteMeriendas();
+    componenteInfo();
+    componenteScroll();
+}
+
+if (mainPrincipal === 'postres'){
+    componentePostres();
     componenteInfo();
     componenteScroll();
 }

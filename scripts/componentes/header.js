@@ -24,19 +24,22 @@ headerContent.innerHTML =
     <a href="./index.html"><i class="fi fi-rr-home"></i></a>
   </li>
   <li id="icon-2" class="no-activo">
-    <a href="./combos.html"><i class="fa-solid fa-utensils"></i></a>
+    <a href="./menus.html"><i class="fa-solid fa-utensils"></i></a>
   </li>
   <li id="icon-3" class="no-activo">
-    <a href="./comida.html"><i class="fi fi-rr-hamburger"></i></a>
+    <a href="./sandwiches.html"><i class="fi fi-rr-hamburger"></i></a>
   </li>
   <li id="icon-4" class="no-activo">
-    <a href="./bebida.html"><i class="fi fi-rr-beer"></i></a>
+    <a href="./bebidas.html"><i class="fi fi-rr-beer"></i></a>
   </li>
   <li id="icon-5" class="no-activo">
-    <a href="./desayuno.html"><i class="fi fi-rr-mug-alt"></i></a>
+    <a href="./desayunos.html"><i class="fi fi-rr-mug-alt"></i></a>
   </li>
   <li id="icon-6" class="no-activo">
-    <a href="./postre.html"><i class="fi fi-rr-cupcake"></i></a>
+    <a href="./meriendas.html"><i class="fi fi-rr-cupcake"></i></a>
+  </li>
+  <li id="icon-7" class="no-activo">
+    <a href="./postres.html"><i class="fa-solid fa-ice-cream"></i></a>
   </li>
 </ol>
 </nav>
@@ -45,25 +48,28 @@ headerContent.innerHTML =
 const btnMenu = document.querySelectorAll('nav.header__nav-fixed ol li a');
 
 const changeColorIconMenu = () => {
-  let elemento = document.title;
-  if(elemento.includes('Inicio')){
+  let elemento = document.querySelector('main').id;
+  if(elemento.includes('inicio')){
     btnMenu[0].classList.add('activo');
     btnMenu[0].classList.remove('no-activo');    
-  } else if(elemento == 'Combos'){
+  } else if(elemento == 'menus'){
     btnMenu[1].classList.add('activo');
     btnMenu[1].classList.remove('no-activo');
-  } else if(elemento == 'Comida'){
+  } else if(elemento == 'sandwiches'){
     btnMenu[2].classList.add('activo');
     btnMenu[2].classList.remove('no-activo');
-  } else if(elemento == 'Bebidas'){
+  } else if(elemento == 'bebidas'){
     btnMenu[3].classList.add('activo');
     btnMenu[3].classList.remove('no-activo');
-  } else if(elemento == 'Desayunos y Meriendas'){
+  } else if(elemento == 'desayunos'){
     btnMenu[4].classList.add('activo');
     btnMenu[4].classList.remove('no-activo');
-  } else if(elemento == 'Postres'){
+  } else if(elemento == 'meriendas'){
     btnMenu[5].classList.add('activo');
     btnMenu[5].classList.remove('no-activo');
+  } else if(elemento == 'postres'){
+    btnMenu[6].classList.add('activo');
+    btnMenu[6].classList.remove('no-activo');
   }
 }
 
