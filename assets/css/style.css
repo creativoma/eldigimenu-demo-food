@@ -59,6 +59,10 @@ header .header__top-logo ol {
 header .header__top-logo ol li {
   transition: all ease 350ms;
 }
+
+header .header__top-logo ol li img {
+  width: 22px;
+}
 header .header__top-logo ol li:nth-child(1):hover {
   transform: scale(1.2);
 }
@@ -66,8 +70,7 @@ header .header__top-logo ol li:nth-child(2):hover {
   transform: rotate(90deg);
 }
 header .header__top-logo ol li a {
-  text-decoration: none;
-  color: var(--white-pure);
+  display: flex;
 }
 header nav.header__nav-fixed {
   position: fixed;
@@ -81,13 +84,13 @@ header nav.header__nav-fixed {
   height: 60px;
   background: var(--white-pure);
   box-shadow: 0 -4px 15px var(--shadow-box);
-  border-radius: 50px 50px 0 0;
+  border-radius: 40px 40px 0 0;
   z-index: 9999;
 }
 nav.header__nav-fixed ol {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px;
+  padding: 0 40px;
   align-items: center;
   width: 100%;
   max-width: 600px;
@@ -101,18 +104,13 @@ nav.header__nav-fixed ol li {
   align-items: center;
 }
 nav.header__nav-fixed ol li a {
-  text-decoration: none;
-  color: var(--greys);
-}
-nav.header__nav-fixed ol li a.activo {
-  text-decoration: none;
-  color: var(--brand-color-two);
-}
-nav.header__nav-fixed ol li a i {
   display: flex;
-  align-items: center;
-  justify-content: center;
 }
+
+nav.header__nav-fixed ol li a img {
+  width: 22px;
+}
+
 main {
   display: flex;
   max-width: 900px;
@@ -223,15 +221,15 @@ div.card > div.container-data > div.price-card > a {
 }
 button.btn-item {
   background: var(--brand-color-four);
-  width: 22px;
-  height: 22px;
+  width: 25px;
+  height: 25px;
   border-radius: 1000px;
   border: 2px solid var(--brand-color-three);
   color: var(--brand-color-one);
   box-shadow: 0 2px 15px var(--shadow-box-two);
   font-weight: 600;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 }
 button.btn-modal {
   margin: 15px 0 0 0;
@@ -294,18 +292,34 @@ div.client > div.rrss-container {
   gap: 10px;
   margin-top: 5px;
 }
-div.client > div.rrss-container > a > i {
+
+div.client > div.rrss-container a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--white-pure);
   border-radius: 100px;
-  padding: 7px;
+  width: 35px;
+  height: 35px;
   border: 2px solid var(--brand-color-three);
   color: var(--brand-color-one);
   box-shadow: 0 2px 15px var(--shadow-box-two);
   font-weight: 600;
   cursor: pointer;
-  font-size: 1.7rem;
+}
+
+div.client > div.rrss-container a img {
+  width: 18px;
+}
+
+div.client > div.config-container {
+  display: flex;
+  gap: 10px;
 }
 div.client > div.config-container > button.btn-config {
+  display: flex;
+  gap: 5px;
+  align-items: center;
   background: var(--white-pure);
   padding: 5px 10px;
   border-radius: 1000px;
@@ -317,6 +331,11 @@ div.client > div.config-container > button.btn-config {
   font-size: 1.4rem;
   margin-top: 10px;
 }
+
+div.client > div.config-container > button.btn-config img {
+  width: 15px;
+}
+
 div.client > span.span-config {
   color: var(--black-intense);
   font-size: 1.3rem;
@@ -339,15 +358,28 @@ div.close {
 div.client h2.title-modal-info {
   margin-bottom: 0;
 }
+
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 900px;
   margin: 0 auto;
   margin-top: 30px;
   margin-bottom: 85px;
 }
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-align: center;
+}
+
 footer span {
   padding-right: 10px;
   font-weight: 600;
@@ -380,6 +412,7 @@ div.client > #brand-eldigimenu {
   border-radius: 100px;
   transition: all ease 750ms;
 }
+
 .active {
   transform: translateX(0);
   opacity: 1;
@@ -387,4 +420,8 @@ div.client > #brand-eldigimenu {
 .inactive {
   transform: translateX(150px);
   opacity: 0;
+}
+
+nav.header__nav-fixed ol li a img:hover {
+  fill: #999999;
 }

@@ -1,1 +1,115 @@
-function topFunction(){document.body.scrollTop=0,document.documentElement.scrollTop=0}(()=>{document.querySelector("header").innerHTML='\n<section class="header__top-logo">\n<img  id="brand-eldigimenu" src="../../assets/img/client-logo_2.svg" alt="eldigimenú" title="eldigimenú" />\n<ol class="header-info__nav-fixed-list">\n  <li id="icon-top-1" class="no-activo">\n    <a href="#"><i class="far fa-question-circle"></i></a>\n  </li>\n  <li id="icon-top-2" class="no-activo">\n    <a href="#"><i class="fas fa-cog"></i></a>\n  </li>\n</ol>\n</section>\n<nav class="header__nav-fixed">\n<ol class="header__nav-fixed-list">\n  <li id="icon-1" class="no-activo">\n    <a href="./index.html"><i class="fi fi-rr-home"></i></a>\n  </li>\n  <li id="icon-2" class="no-activo">\n    <a href="./menus.html"><i class="fa-solid fa-utensils"></i></a>\n  </li>\n  <li id="icon-3" class="no-activo">\n    <a href="./sandwiches.html"><i class="fi fi-rr-hamburger"></i></a>\n  </li>\n  <li id="icon-4" class="no-activo">\n    <a href="./bebidas.html"><i class="fi fi-rr-beer"></i></a>\n  </li>\n  <li id="icon-5" class="no-activo">\n    <a href="./desayunos.html"><i class="fi fi-rr-mug-alt"></i></a>\n  </li>\n  <li id="icon-6" class="no-activo">\n    <a href="./meriendas.html"><i class="fi fi-rr-cupcake"></i></a>\n  </li>\n  <li id="icon-7" class="no-activo">\n    <a href="./postres.html"><i class="fa-solid fa-ice-cream"></i></a>\n  </li>\n</ol>\n</nav>\n';const i=document.querySelectorAll("nav.header__nav-fixed ol li a");(()=>{let s=document.querySelector("main").id;s.includes("inicio")?(i[0].classList.add("activo"),i[0].classList.remove("no-activo")):"menus"==s?(i[1].classList.add("activo"),i[1].classList.remove("no-activo")):"sandwiches"==s?(i[2].classList.add("activo"),i[2].classList.remove("no-activo")):"bebidas"==s?(i[3].classList.add("activo"),i[3].classList.remove("no-activo")):"desayunos"==s?(i[4].classList.add("activo"),i[4].classList.remove("no-activo")):"meriendas"==s?(i[5].classList.add("activo"),i[5].classList.remove("no-activo")):"postres"==s&&(i[6].classList.add("activo"),i[6].classList.remove("no-activo"))})()})();const cerrarModales=()=>{let i=document.querySelectorAll(".modal, .open");for(let s=0;s<i.length;s++)i[s].classList.contains("open")&&(i[s].classList.remove("open"),i[s].classList.add("close"))};
+(()=>{
+  const headerContent = document.querySelector('header');
+
+  headerContent.innerHTML = 
+
+  `
+  <section class="header__top-logo">
+  <img  id="brand-eldigimenu" src="https://eldigimenu.com/demo/food/assets/img/client-logo_2.svg" alt="eldigimenú" title="eldigimenú" />
+  <ol class="header-info__nav-fixed-list">
+    <li id="icon-top-1" class="no-activo">
+      <a href="#"><img src="./assets/svg/informacion.svg" alt="Icono Menú"/></a>
+    </li>
+    <li id="icon-top-2" class="no-activo">
+    <a href="#"><img src="./assets/svg/ajustes.svg" alt="Icono Menú"/></a>
+    </li>
+  </ol>
+  </section>
+  <nav class="header__nav-fixed">
+  <ol class="header__nav-fixed-list">
+    <li id="icon-1" class="no-activo">
+      <a href="./index.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/casa.svg"></object>
+      </a>
+    </li>
+    <li id="icon-2" class="no-activo">
+      <a href="./menus.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/menu.svg"></object>
+      </a>
+    </li>
+    <li id="icon-3" class="no-activo">
+      <a href="./sandwiches.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/hamburguesa.svg"></object>
+      </a>
+    </li>
+    <li id="icon-4" class="no-activo">
+      <a href="./bebidas.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/bebidas.svg"></object>
+      </a>
+    </li>
+    <li id="icon-5" class="no-activo">
+      <a href="./desayunos.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/taza-caliente.svg"></object>
+      </a>
+    </li>
+    <li id="icon-6" class="no-activo">
+      <a href="./meriendas.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/magdalena.svg"></object>
+      </a>
+    </li>
+    <li id="icon-7" class="no-activo">
+      <a href="./postres.html">
+        <object class="selectObj" type="image/svg+xml" data="./assets/svg/helado.svg"></object>
+      </a>
+    </li>
+  </ol>
+  </nav>
+  `
+
+  setTimeout(() => {
+    const arrObjetos = document.querySelectorAll(".selectObj");
+
+    for (let i = 0; i < arrObjetos.length; i++) {
+
+      let contentObj = (arrObjetos[i].contentDocument).querySelector('svg');
+      
+      let btn1 = (arrObjetos[0].contentDocument).querySelector('svg');
+      let btn2 = (arrObjetos[1].contentDocument).querySelector('svg');
+      let btn3 = (arrObjetos[2].contentDocument).querySelector('svg');
+      let btn4 = (arrObjetos[3].contentDocument).querySelector('svg');
+      let btn5 = (arrObjetos[4].contentDocument).querySelector('svg');
+      let btn6 = (arrObjetos[5].contentDocument).querySelector('svg');
+      let btn7 = (arrObjetos[6].contentDocument).querySelector('svg');
+
+      console.log(contentObj);
+      contentObj.style.transition = "all ease 200ms";
+
+      let colorActive = '#bb0c17';
+      
+      let elemento = document.querySelector('main').id;      
+      if(elemento.includes('inicio')){
+        btn1.style.fill = colorActive;  
+      } else if(elemento == 'menus'){
+        btn2.style.fill = colorActive;  
+      } else if(elemento == 'sandwiches'){
+        btn3.style.fill = colorActive; 
+      } else if(elemento == 'bebidas'){
+        btn4.style.fill = colorActive; 
+      } else if(elemento == 'desayunos'){
+        btn5.style.fill = colorActive; 
+      } else if(elemento == 'meriendas'){
+        btn6.style.fill = colorActive; 
+      } else if(elemento == 'postres'){
+        btn7.style.fill = colorActive; 
+      }
+    }
+  }, 100);
+
+})();
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+const cerrarModales = () =>{
+
+  let modalOpen = document.querySelectorAll('.modal, .open'); 
+  for (let i = 0; i < modalOpen.length; i++) {
+      if(modalOpen[i].classList.contains('open')){
+      modalOpen[i].classList.remove('open');
+      modalOpen[i].classList.add('close');
+    }
+  } 
+}
