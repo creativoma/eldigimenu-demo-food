@@ -43,3 +43,7 @@ button#btn {
 div.client > p {
   text-align: center;
 }
+
+button.btn-modal {
+  align-self: center;
+}

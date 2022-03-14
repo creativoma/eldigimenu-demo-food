@@ -5,7 +5,7 @@
 
   `
   <section class="header__top-logo">
-  <img  id="brand-eldigimenu" src="https://eldigimenu.com/demo/food/assets/img/client-logo_2.svg" alt="eldigimenú" title="eldigimenú" />
+  <img  id="brand-eldigimenu" src="https://eldigimenu.com/demo/food/assets/svg/client-logo_2.svg" alt="eldigimenú" title="eldigimenú" />
   <ol class="header-info__nav-fixed-list">
     <li id="icon-top-1" class="no-activo">
       <a href="#"><img src="./assets/svg/informacion.svg" alt="Icono Menú"/></a>

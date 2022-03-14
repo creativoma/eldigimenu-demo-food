@@ -244,8 +244,9 @@ button.btn-modal {
   font-size: 1.6rem;
   min-width: 100px;
   width: auto;
-  align-self: center;
+  align-self: flex-start;
 }
+
 div.modal {
   position: fixed;
   background-color: var(--brand-color-two);
