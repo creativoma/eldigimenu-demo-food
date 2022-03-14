@@ -1,7 +1,10 @@
 (()=>{
 const footerContent = document.querySelector('footer');
+const añoActual = new Date().getFullYear();
 
 footerContent.innerHTML = `
+<p>Esto es una demostración.<br>Los productos, servicios y/o marcas no son reales.</p>
+<p>Todos los derechos reservados © ${añoActual}</p>
 <div>
   <span>by</span>
   <a href="https://eldigimenu.com" target="_blank">
@@ -13,7 +16,6 @@ footerContent.innerHTML = `
     />
   </a>
 </div>
-<p>Esto es una demostración.<br>Los productos, servicios y/o marcas no son reales.</p>
+
 `
 })();
-

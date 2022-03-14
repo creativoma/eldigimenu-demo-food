@@ -377,7 +377,7 @@ footer > p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -421,8 +421,4 @@ div.client > #brand-eldigimenu {
 .inactive {
   transform: translateX(150px);
   opacity: 0;
-}
-
-nav.header__nav-fixed ol li a img:hover {
-  fill: #999999;
 }
