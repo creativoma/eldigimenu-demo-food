@@ -23,34 +23,22 @@
       </a>
     </li>
     <li id="icon-2" class="no-activo">
-      <a href="./menus.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/menu.svg"></object>
-      </a>
     </li>
     <li id="icon-3" class="no-activo">
-      <a href="./sandwiches.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/hamburguesa.svg"></object>
-      </a>
     </li>
     <li id="icon-4" class="no-activo">
-      <a href="./bebidas.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/bebidas.svg"></object>
-      </a>
     </li>
     <li id="icon-5" class="no-activo">
-      <a href="./desayunos.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/taza-caliente.svg"></object>
-      </a>
     </li>
     <li id="icon-6" class="no-activo">
-      <a href="./meriendas.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/magdalena.svg"></object>
-      </a>
     </li>
     <li id="icon-7" class="no-activo">
-      <a href="./postres.html">
         <object class="selectObj" type="image/svg+xml" data="./assets/svg/helado.svg"></object>
-      </a>
     </li>
   </ol>
   </nav>
@@ -92,6 +80,29 @@
       } else if(elemento == 'postres'){
         btn7.style.fill = colorActive; 
       }
+
+      btn1.addEventListener('click', () => {
+        window.location.href = "index.html";
+      });
+      btn2.addEventListener('click', () => {
+        window.location.href = "menus.html";
+      });
+      btn3.addEventListener('click', () => {
+        window.location.href = "sandwiches.html";
+      });
+      btn4.addEventListener('click', () => {
+        window.location.href = "bebidas.html";
+      });
+      btn5.addEventListener('click', () => {
+        window.location.href = "desayunos.html";
+      });
+      btn6.addEventListener('click', () => {
+        window.location.href = "meriendas.html";
+      });
+      btn7.addEventListener('click', () => {
+        window.location.href = "postres.html";
+      });
+
     }
   }, 100);
 
