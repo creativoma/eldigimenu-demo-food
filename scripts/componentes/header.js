@@ -59,19 +59,19 @@
   const idMain = document.querySelector('main').id;
 
   if(idMain === "inicio"){
-    iconosIMG[0].src = "../../assets/svg/select-icon/casa.svg"
-  } else if(idMain === "menus"){
-    iconosIMG[1].src = "../../assets/svg/select-icon/menu.svg"
+    iconosIMG[0].src = "./assets/svg/select-icon/casa.svg"
+  } else if(idMain === "menu"){
+    iconosIMG[1].src = "./assets/svg/select-icon/menu.svg"
   } else if(idMain === "sandwiches"){
-    iconosIMG[2].src = "../../assets/svg/select-icon/hamburguesa.svg"
+    iconosIMG[2].src = "./assets/svg/select-icon/hamburguesa.svg"
   } else if(idMain === "bebidas"){
-    iconosIMG[3].src = "../../assets/svg/select-icon/bebidas.svg"
+    iconosIMG[3].src = "./assets/svg/select-icon/bebidas.svg"
   } else if(idMain === "desayunos"){
-    iconosIMG[4].src = "../../assets/svg/select-icon/taza-caliente.svg"
+    iconosIMG[4].src = "./assets/svg/select-icon/taza-caliente.svg"
   } else if(idMain === "meriendas"){
-    iconosIMG[5].src = "../../assets/svg/select-icon/magdalena.svg"
+    iconosIMG[5].src = "./assets/svg/select-icon/magdalena.svg"
   } else if(idMain === "postres"){
-    iconosIMG[6].src = "../../assets/svg/select-icon/helado.svg"
+    iconosIMG[6].src = "./assets/svg/select-icon/helado.svg"
   } 
 
 })();
