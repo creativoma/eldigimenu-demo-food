@@ -60,7 +60,7 @@
 
   if(idMain === "inicio"){
     iconosIMG[0].src = "./assets/svg/select-icon/casa.svg"
-  } else if(idMain === "menu"){
+  } else if(idMain === "menus"){
     iconosIMG[1].src = "./assets/svg/select-icon/menu.svg"
   } else if(idMain === "sandwiches"){
     iconosIMG[2].src = "./assets/svg/select-icon/hamburguesa.svg"
