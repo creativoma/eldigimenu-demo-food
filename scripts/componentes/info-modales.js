@@ -13,7 +13,6 @@ export const infoModales = (API) =>{
 
     const datos = document.querySelector('#icon-top-1');
 
-    const logo = items[1].c[0].v;
     const direccion = items[1].c[1].v;
     const horario = items[1].c[2].v;
     const telefono = items[1].c[3].v;
@@ -29,10 +28,9 @@ export const infoModales = (API) =>{
       if(modal.classList.contains('close')){
         modal.innerHTML =`
         <img  id="brand-eldigimenu-modal"
-              src="${logo}"
-              alt="eldigimenú"
-              title="eldigimenú"
-              
+              src="./assets/svg/client-logo_4.svg"
+              alt="Mac Ronald's"
+              title="Mac Ronald's"
         />
         <h3 class="title-modal-info">Dirección</h3> 
         <p>${direccion}</p>
@@ -60,20 +58,20 @@ export const infoModales = (API) =>{
       if(modal.classList.contains('close')){
         modal.innerHTML =`
         <img  id="brand-eldigimenu-modal"
-              src="${logo}"
-              alt="eldigimenú"
-              title="eldigimenú"
+              src="./assets/svg/client-logo_4.svg"
+              alt="Mac Ronald's"
+              title="Mac Ronald's"
         />
         <h3 class="title-modal-info">Idiomas</h3> 
         <div class="config-container">     
           <button id="btn-es" class="btn-config">Español</button> 
-          <button id="btn-en" class="btn-config">Inglés</button>
-          <button id="btn-fr" class="btn-config">Fránces</button>    
+          <button id="btn-en" class="btn-config desactivado">Inglés</button>
+          <button id="btn-fr" class="btn-config desactivado">Fránces</button>    
         </div>   
-        <h3 class="title-modal-info">Comparte el menú</h3> 
+        <h3 class="title-modal-info">Comparte la carta</h3> 
         <div class="config-container">     
-          <button id="btn-whatsapp" class="btn-config"><img src="./assets/svg/whatsapp.svg" alt="Icono Menú" width="20"/> WhatsApp</button> 
-          <button id="btn-enlace" class="btn-config"><img src="./assets/svg/enlace.svg" alt="Icono Menú" width="20"/> Copiar enlace</button> 
+          <button id="btn-whatsapp" onclick="comparteWhatsApp()" class="btn-config"><img src="./assets/svg/whatsapp.svg" alt="Icono Menú" width="20"/> WhatsApp</button> 
+          <button id="btn-enlace" onclick="comparteLink()"  class="btn-config"><img src="./assets/svg/enlace.svg" alt="Icono Menú" width="20"/> Copiar enlace</button>
         </div> 
         <span class="span-config">Última actualización: ${fechaActualizacion}</span>       
         <button id="btn-cerrar" class="btn-modal" onclick="cerrarModales()">Cerrar</button>
